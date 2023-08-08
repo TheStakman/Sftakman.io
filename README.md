@@ -11,6 +11,12 @@ npm install @sveltejs/adapter-node@next --save-dev
 nvim svelte.config.js
 ```
 
+### Do some development work
+```sh
+npm run build
+npm run dev
+```
+
 ### Build and run image locally
 
 ```sh
