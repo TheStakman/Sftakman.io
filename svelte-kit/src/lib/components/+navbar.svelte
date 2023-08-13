@@ -1,3 +1,15 @@
+<script>
+  import { onMount } from 'svelte';
+
+  onMount(() => {
+    const button = document.querySelector("[data-collapse-toggle='navbar-default']");
+    const menu = document.querySelector("#navbar-default");
+
+    button.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  });
+</script>
 <nav class="bg-white border-gray-200 dark:bg-zinc-950">
     <!-- left side of navbar, with logo img and lynnsanity name-->
     <div class="max-w-screen-xl flex flex-wrap items-center mx-auto justify-between p-4">
@@ -31,15 +43,4 @@
       </div>
     </div>
   </nav>
-  <script>
-    import { onMount } from 'svelte';
-  
-    onMount(() => {
-      const button = document.querySelector("[data-collapse-toggle='navbar-default']");
-      const menu = document.querySelector("#navbar-default");
-  
-      button.addEventListener("click", () => {
-        menu.classList.toggle("hidden");
-      });
-    });
-  </script>
+
