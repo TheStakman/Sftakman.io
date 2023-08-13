@@ -1,37 +1,31 @@
-<!-- <main>
-<section class="flex h-[80vh] shrink-0 flex-col items-center justify-center bg-secondary-500">
-    <video muted autoplay loop playsinline disablepictureinpicture>
-        <source src="/umbrella.webm" type="video/webm"/> 
-    </video> 
-    <h1 class="text-6l">Moving Scapes</h1> 
-    <button class="text-4xl">Subscribe</button>
-</section>
-</main> -->
+<script>
+  import Navbar from '../lib/components/+navbar.svelte'; // Adjust the path based on your project structure
+</script>
 <main>
-  <section class="flex h-[80vh] shrink-0 flex-col items-center justify-center bg-secondary-800">
+  <Navbar />
+  <section class="flex justify-center items-center bg-zinc-950">
     <div class="video-container">
-      <video class="responsive-video" muted autoplay loop playsinline disablepictureinpicture>
+      <video class="responsive-video" muted autoplay loop playsinline disablePictureInPicture>
         <source src="/umbrella.webm" type="video/webm"/>
       </video>
-      </div>
+    </div>
   </section>
 </main>
-  
-<style>
-  .video-container {
-    position: relative;
-    width: 100%;
-    max-width: 2000px; /* Adjust as needed */
-    padding-top: 56.25%; /* 16:9 aspect ratio */
-    overflow: hidden;
+<style lang="postcss">
+  :global(html) {
+    background-color: theme(colors.zinc.950);
   }
-
+  .video-container {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center; /* Horizontal centering */
+   align-items: center; /* Vertical centering */
+  }
   .responsive-video {
-    position: absolute;
-    width: 100%;
-    height: 80%;
-    top: 0;
-    left: 0;
-    object-fit: cover;
+    position: center;
+    width: 98%;
+    height: 30%;
+    border-radius: 5px; /* Adjust the value to control the amount of rounding */ 
   }
 </style>
