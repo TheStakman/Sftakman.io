@@ -31,3 +31,15 @@
       </div>
     </div>
   </nav>
+  <script>
+    import { onMount } from 'svelte';
+  
+    onMount(() => {
+      const button = document.querySelector("[data-collapse-toggle='navbar-default']");
+      const menu = document.querySelector("#navbar-default");
+  
+      button.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    });
+  </script>
