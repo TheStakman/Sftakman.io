@@ -1,18 +1,17 @@
 <script>
-  import Navbar from '../lib/components/+navbar.svelte';
+  import Button from './home/Button.svelte';
 </script>
 <main>
-  <Navbar />
   <section class="flex flex-col shrink-0 video-container">
     <video class="-z-10 responsive-video" muted autoplay loop playsinline disablePictureInPicture>
       <source src="/dreamytemple.webm" type="video/webm"/>
     </video>
-    <h1 class="text-6xl">Welcome to my website</h1>
-    <button class="text-4xl">Learn More</button>
+    <div class="welcome-container">
+      <h1 class="h1 text-6xl">Welcome</h1>
+      <Button />
   </section>
 </main>
 
-<!-- css styling -->
 <style lang="postcss">
   :global(html) {
     background-color: theme(colors.zinc.950);
@@ -31,6 +30,22 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+  .welcome-container {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid white;
+    outline-color: white;
+    padding: 5ex;
+  }
+
+  .h1 {
+    padding-bottom: 20px;
   }
 
   /* tablet styles */
