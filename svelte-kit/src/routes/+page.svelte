@@ -5,7 +5,7 @@
   <Navbar />
   <section class="flex flex-col shrink-0 video-container">
     <video class="-z-10 responsive-video" muted autoplay loop playsinline disablePictureInPicture>
-      <source src="/umbrella.webm" type="video/webm"/>
+      <source src="/dreamytemple.webm" type="video/webm"/>
     </video>
     <h1 class="text-6xl">Welcome to my website</h1>
     <button class="text-4xl">Learn More</button>
