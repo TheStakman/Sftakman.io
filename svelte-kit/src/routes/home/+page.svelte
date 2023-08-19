@@ -1,17 +1,21 @@
 <script>
+  // import the styling and functionality of the explore button from Button.svelte
   import Button from './Button.svelte';
 </script>
 <main>
   <section class="flex flex-col shrink-0 video-container">
+    <!-- background video with responsive properties -->
     <video class="-z-10 responsive-video" muted autoplay loop playsinline disablePictureInPicture>
       <source src="/dreamytemple.webm" type="video/webm"/>
     </video>
+    <!-- part where the welcome message and button is -->
     <div class="welcome-container">
       <h1 class="h1 text-6xl">Welcome</h1>
       <Button />
   </section>
 </main>
 
+<!-- styling of page -->
 <style lang="postcss">
 
   .video-container {

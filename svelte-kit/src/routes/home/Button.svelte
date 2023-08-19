@@ -1,11 +1,15 @@
 <script>
+  // when the button is clicked it will call this function
   function redirectToAboutPage() {
+    // this will redirect the user to the /about page
     window.location.href = "about";
   }
 </script>
 
+<!-- setting the button class and onclick function, as well as content of button -->
 <button class="button" on:click={redirectToAboutPage}>Explore</button>
 
+<!-- styling of button -->
 <style lang="postcss">
 .button {
     background-color: transparent;
