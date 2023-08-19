@@ -11,11 +11,10 @@
   });
 </script>
 <nav class="bg-white border-gray-200 dark:bg-zinc-950">
-    <!-- left side of navbar, with logo img and lynnsanity name-->
+    <!-- left side of navbar, lynnsanity logo-->
     <div class="max-w-screen-xl flex flex-wrap items-center mx-auto justify-between p-4">
-      <a href="https://lynnsanity.io/" class="flex items-center">
-          <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 mr-3" alt="lynnsanity Logo" />
-          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">lynnsanity</span>
+      <a href="home" class="flex items-center">
+          <img src="lynnsanity.png" class="h-8 mr-3" alt="lynnsanity logo" /> 
       </a>
       <!-- for responsive navbar turning to hamburger button on mobile devices -->
       <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
