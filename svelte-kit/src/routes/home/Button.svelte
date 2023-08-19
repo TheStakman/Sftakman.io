@@ -1,6 +1,6 @@
 <script>
   function redirectToAboutPage() {
-    window.location.href = "../about";
+    window.location.href = "about";
   }
 </script>
 

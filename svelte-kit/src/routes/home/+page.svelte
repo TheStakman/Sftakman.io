@@ -1,5 +1,5 @@
 <script>
-  import Button from './home/Button.svelte';
+  import Button from './Button.svelte';
 </script>
 <main>
   <section class="flex flex-col shrink-0 video-container">
@@ -13,9 +13,7 @@
 </main>
 
 <style lang="postcss">
-  :global(html) {
-    background-color: theme(colors.zinc.950);
-  }
+
   .video-container {
     position: relative;
     width: 100%;
