@@ -1,6 +1,6 @@
 <script>
   // import the styling and functionality of the explore button from Button.svelte
-  import Button from './Button.svelte';
+  import Button from './home/Button.svelte';
 </script>
 <main>
   <section class="flex flex-col shrink-0 video-container">
