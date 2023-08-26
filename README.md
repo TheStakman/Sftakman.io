@@ -1,4 +1,4 @@
-lynnsanity.io
+stakman.io
 =============
 
 ### Set up SvelteKit
@@ -20,11 +20,11 @@ npm run dev
 ### Build and run image locally
 
 ```sh
-podman build -f Dockerfile -t lynnsanity:1.0.0
-podman run -it --rm --name sveltekit-docker -p 3000:3000 lynnsanity:1.0.0
+podman build -f Dockerfile -t stakman:1.0.0
+podman run -it --rm --name sveltekit-docker -p 3000:3000 stakman:1.0.0
 ```
 
 ### Push image to your registry
 
-`podman push lynnsanity/lynnsanity.io:<tag>`
+`podman push stakman/stakman.io:<tag>`
 
